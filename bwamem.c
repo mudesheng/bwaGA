@@ -1017,7 +1017,12 @@ void mem_reg2sam(const mem_opt_t *opt, const bntseq_t *bns, const uint8_t *pac, 
 		mem_aln_t *q;
 		if (p->score < opt->T) continue;
 		if (p->secondary >= 0 && (p->is_alt || !(opt->flag&MEM_F_ALL))) continue;
-		if (p->secondary >= 0 && p->secondary < INT_MAX && p->score < a->a[p->secondary].score * opt->drop_ratio) continue;
+		if (p->secondary >= 0 && p->secondary < INT_MAX) {
+			mem_alnreg_t *f = &a->a[p->secondary];
+			// if (p->rb == 0) maybe it is a new GDB edge
+			if (p->rb != 0 && (f->qb < p->qb) && (f->qe > p->qe) && p->score < a->a[p->secondary].score * opt->drop_ratio) continue;
+		}
+		//if (p->secondary >= 0 && p->secondary < INT_MAX && p->score < a->a[p->secondary].score * opt->drop_ratio) continue;
 		q = kv_pushp(mem_aln_t, aa);
 		*q = mem_reg2aln(opt, bns, pac, s->l_seq, s->seq, p);
 		assert(q->rid >= 0); // this should not happen with the new code
