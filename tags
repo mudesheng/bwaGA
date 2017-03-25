@@ -1,0 +1,608 @@
+ATTRIBUTE	utils.h	/^#define ATTRIBUTE(list) __attribute__ (list)$/
+BWA	NEWS.md	/^   license. This allows us to create an Apache2-li/
+BWT	bwt_gen.c	/^} BWT;$/
+BWTClearTrailingBwtCode	bwt_gen.c	/^void BWTClearTrailingBwtCode(BWT *bwt)$/
+BWTCreate	bwt_gen.c	/^BWT *BWTCreate(const bgint_t textLength, unsigned /
+BWTFileSizeInWord	bwt_gen.c	/^static bgint_t BWTFileSizeInWord(const bgint_t num/
+BWTFree	bwt_gen.c	/^void BWTFree(BWT *bwt)$/
+BWTGenerateOccValueFromBwt	bwt_gen.c	/^void BWTGenerateOccValueFromBwt(const unsigned int/
+BWTInc	bwt_gen.c	/^} BWTInc;$/
+BWTIncBuildBwt	bwt_gen.c	/^static void BWTIncBuildBwt(unsigned int* insertBwt/
+BWTIncBuildPackedBwt	bwt_gen.c	/^static void BWTIncBuildPackedBwt(const bgint_t *re/
+BWTIncBuildRelativeRank	bwt_gen.c	/^static void BWTIncBuildRelativeRank(bgint_t* __res/
+BWTIncConstruct	bwt_gen.c	/^\/\/ for BWTIncConstruct()$/
+BWTIncConstructFromPacked	bwt_gen.c	/^BWTInc *BWTIncConstructFromPacked(const char *inpu/
+BWTIncCreate	bwt_gen.c	/^\/\/ for BWTIncCreate()$/
+BWTIncFree	bwt_gen.c	/^void BWTIncFree(BWTInc *bwtInc)$/
+BWTIncGetAbsoluteRank	bwt_gen.c	/^static bgint_t BWTIncGetAbsoluteRank(BWT *bwt, bgi/
+BWTIncMergeBwt	bwt_gen.c	/^static void BWTIncMergeBwt(const bgint_t *sortedRa/
+BWTIncSetBuildSizeAndTextAddr	bwt_gen.c	/^static void BWTIncSetBuildSizeAndTextAddr(BWTInc */
+BWTIncSortKey	bwt_gen.c	/^static void BWTIncSortKey(bgint_t* __restrict key,/
+BWTOccValue	bwt_gen.c	/^bgint_t BWTOccValue(const BWT *bwt, bgint_t index,/
+BWTOccValueExplicit	bwt_gen.c	/^static inline bgint_t BWTOccValueExplicit(const BW/
+BWTSaveBwtCodeAndOcc	bwt_gen.c	/^void BWTSaveBwtCodeAndOcc(const BWT *bwt, const ch/
+BackwardDNAOccCount	bwt_gen.c	/^static unsigned int BackwardDNAOccCount(const unsi/
+BitPerBytePackedChar	bwt_gen.c	/^\/\/ for BitPerBytePackedChar()$/
+ConvertBytePackedToWordPacked	bwt_gen.c	/^\/\/ for ConvertBytePackedToWordPacked()$/
+Copyright	COPYING	/^ Copyright (C) 2007 Free Software Foundation, Inc./
+DNA_OCC_SUM_EXCEPTION	bwt_gen.c	/^#define DNA_OCC_SUM_EXCEPTION(sum)			((sum & 0xfef/
+ForwardDNAAllOccCountNoLimit	bwt_gen.c	/^static void ForwardDNAAllOccCountNoLimit(const uns/
+ForwardDNAOccCount	bwt_gen.c	/^static unsigned int ForwardDNAOccCount(const unsig/
+GenerateDNAOccCountTable	bwt_gen.c	/^static void GenerateDNAOccCountTable(unsigned int /
+KBTREE_INIT	kbtree.h	/^#define KBTREE_INIT(name, key_t, __cmp)			\\$/
+KEY	QSufSort.h	/^#define KEY(V, I, p, h)					( V[ I[p] + h ] )$/
+KHASH_DECLARE	khash.h	/^#define KHASH_DECLARE(name, khkey_t, khval_t)		 		/
+KHASH_INIT	bwape.c	/^KHASH_INIT(b128, pair64_t, poslist_t, 1, b128_hash/
+KHASH_INIT2	khash.h	/^#define KHASH_INIT2(name, SCOPE, khkey_t, khval_t,/
+KHASH_MAP_INIT_INT	khash.h	/^#define KHASH_MAP_INIT_INT(name, khval_t)								/
+KHASH_MAP_INIT_INT64	khash.h	/^#define KHASH_MAP_INIT_INT64(name, khval_t)							/
+KHASH_MAP_INIT_STR	khash.h	/^#define KHASH_MAP_INIT_STR(name, khval_t)								/
+KHASH_SET_INIT_INT	khash.h	/^#define KHASH_SET_INIT_INT(name)										\\$/
+KHASH_SET_INIT_INT64	khash.h	/^#define KHASH_SET_INIT_INT64(name)										\\$/
+KHASH_SET_INIT_STR	khash.h	/^#define KHASH_SET_INIT_STR(name)										\\$/
+KSEQ_DECLARE	bwa.c	/^KSEQ_DECLARE(gzFile)$/
+KSEQ_INIT	kseq.h	/^#define KSEQ_INIT(type_t, __read) KSEQ_INIT2(stati/
+KSEQ_INIT2	kseq.h	/^#define KSEQ_INIT2(SCOPE, type_t, __read)		\\$/
+KSORT_INIT	bwamem.c	/^KSORT_INIT(mem_intv, bwtintv_t, intv_lt)$/
+KSORT_INIT_GENERIC	ksort.h	/^#define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type/
+KSORT_SWAP	ksort.h	/^#define KSORT_SWAP(type_t, a, b) { register type_t/
+KSTREAM_INIT	kseq.h	/^#define KSTREAM_INIT(type_t, __read, __bufsize) \\/
+LIKELY	ksw.c	/^#define LIKELY(x) __builtin_expect((x),1)$/
+Mbwt_gen	bwt_gen.c	/^int main(int argc, char *argv[])$/
+Mkopen	kopen.c	/^int main(int argc, char *argv[])$/
+Mkstring	kstring.c	/^int main()$/
+Mksw	ksw.c	/^int main(int argc, char *argv[])$/
+Mmain	main.c	/^int main(int argc, char *argv[])$/
+QSufSortBucketSort	QSufSort.c	/^static void QSufSortBucketSort(qsint_t* __restrict/
+QSufSortChoosePivot	QSufSort.c	/^static qsint_t QSufSortChoosePivot(qsint_t* __rest/
+QSufSortGenerateSaFromInverse	QSufSort.c	/^void QSufSortGenerateSaFromInverse(const qsint_t* /
+QSufSortInsertSortSplit	QSufSort.c	/^static void QSufSortInsertSortSplit(qsint_t* __res/
+QSufSortSortSplit	QSufSort.c	/^static void QSufSortSortSplit(qsint_t* __restrict /
+QSufSortSuffixSort	QSufSort.c	/^void QSufSortSuffixSort(qsint_t* __restrict V, qsi/
+QSufSortTransform	QSufSort.c	/^static qsint_t QSufSortTransform(qsint_t* __restri/
+SAM	bwa.1	/^alignment in the SAM (Sequence Alignment\/Map) for/
+TextLengthFromBytePacked	bwt_gen.c	/^static bgint_t TextLengthFromBytePacked(bgint_t by/
+UNLIKELY	ksw.c	/^#define UNLIKELY(x) __builtin_expect((x),0)$/
+__KB_DEL	kbtree.h	/^#define __KB_DEL(name, key_t)											\\$/
+__KB_GET	kbtree.h	/^#define __KB_GET(name, key_t)											\\$/
+__KB_GET_AUX0	kbtree.h	/^#define __KB_GET_AUX0(name, key_t, __cmp)								/
+__KB_GET_AUX1	kbtree.h	/^#define __KB_GET_AUX1(name, key_t, __cmp)								/
+__KB_INIT	kbtree.h	/^#define __KB_INIT(name, key_t)											\\$/
+__KB_INTERVAL	kbtree.h	/^#define __KB_INTERVAL(name, key_t)										\\$/
+__KB_KEY	kbtree.h	/^#define	__KB_KEY(type, x)	((type*)((char*)x + 4))$/
+__KB_PTR	kbtree.h	/^#define __KB_PTR(btr, x)	((kbnode_t**)((char*)x + /
+__KB_PUT	kbtree.h	/^#define __KB_PUT(name, key_t, __cmp)									\\$/
+__KB_TREE_T	kbtree.h	/^#define __KB_TREE_T(name)						\\$/
+__KHASH_IMPL	khash.h	/^#define __KHASH_IMPL(name, SCOPE, khkey_t, khval_t/
+__KHASH_PROTOTYPES	khash.h	/^#define __KHASH_PROTOTYPES(name, khkey_t, khval_t)/
+__KHASH_TYPE	khash.h	/^#define __KHASH_TYPE(name, khkey_t, khval_t) \\$/
+__KSEQ_BASIC	kseq.h	/^#define __KSEQ_BASIC(SCOPE, type_t)										\\$/
+__KSEQ_READ	kseq.h	/^#define __KSEQ_READ(SCOPE) \\$/
+__KSEQ_TYPE	kseq.h	/^#define __KSEQ_TYPE(type_t)						\\$/
+__KS_BASIC	kseq.h	/^#define __KS_BASIC(type_t, __bufsize)								\\$/
+__KS_GETC	kseq.h	/^#define __KS_GETC(__read, __bufsize)						\\$/
+__KS_GETUNTIL	kseq.h	/^#define __KS_GETUNTIL(__read, __bufsize)								\\/
+__KS_TYPE	kseq.h	/^#define __KS_TYPE(type_t)						\\$/
+__ac_Wang_hash	khash.h	/^static kh_inline khint_t __ac_Wang_hash(khint_t ke/
+__ac_X31_hash_string	khash.h	/^static kh_inline khint_t __ac_X31_hash_string(cons/
+__ac_fsize	khash.h	/^#define __ac_fsize(m) ((m) < 16? 1 : (m)>>4)$/
+__ac_inc	khash.h	/^#define __ac_inc(k, m) 1$/
+__ac_isdel	khash.h	/^#define __ac_isdel(flag, i) ((flag[i>>4]>>((i&0xfU/
+__ac_iseither	khash.h	/^#define __ac_iseither(flag, i) ((flag[i>>4]>>((i&0/
+__ac_isempty	khash.h	/^#define __ac_isempty(flag, i) ((flag[i>>4]>>((i&0x/
+__ac_set_isboth_false	khash.h	/^#define __ac_set_isboth_false(flag, i) (flag[i>>4]/
+__ac_set_isdel_false	khash.h	/^#define __ac_set_isdel_false(flag, i) (flag[i>>4]&/
+__ac_set_isdel_true	khash.h	/^#define __ac_set_isdel_true(flag, i) (flag[i>>4]|=/
+__ac_set_isempty_false	khash.h	/^#define __ac_set_isempty_false(flag, i) (flag[i>>4/
+__bwa_seqio_t	bwaseqio.c	/^struct __bwa_seqio_t {$/
+__cigar_create	bwtaln.h	/^#define __cigar_create(__op, __len) ((__op)<<CIGAR/
+__cigar_len	bwtaln.h	/^#define __cigar_len(__cigar) ((__cigar)&CIGAR_LN_M/
+__cigar_op	bwtaln.h	/^#define __cigar_op(__cigar) ((__cigar)>>CIGAR_OP_S/
+__err_connect	kopen.c	/^#define __err_connect(func) do { perror(func); fre/
+__gen_ap	bwtsw2_aux.c	/^#define __gen_ap(par, opt) do {									\\$/
+__hitG_lt	bwtsw2_core.c	/^#define __hitG_lt(a, b) (((a).G + ((int)(a).n_seed/
+__kb_destroy	kbtree.h	/^#define __kb_destroy(b) do {											\\$/
+__kb_get_first	kbtree.h	/^#define __kb_get_first(key_t, b, ret) do {	\\$/
+__kb_traverse	kbtree.h	/^#define __kb_traverse(key_t, b, __func) do {						/
+__kbstack_t	kbtree.h	/^} __kbstack_t;$/
+__left_lt	bwtsw2_aux.c	/^#define __left_lt(a, b) ((a).end > (b).end)$/
+__max_16	ksw.c	/^#define __max_16(ret, xx) do { \\$/
+__max_8	ksw.c	/^#define __max_8(ret, xx) do { \\$/
+__occ_aux	bwt.c	/^static inline int __occ_aux(uint64_t y, int c)$/
+__occ_aux4	bwt.c	/^#define __occ_aux4(bwt, b)											\\$/
+__pairing_aux	bwape.c	/^#define __pairing_aux(u,v) do { \\$/
+__pairing_aux2	bwape.c	/^#define __pairing_aux2(q, w) do { \\$/
+__smem_i	bwamem_extra.c	/^struct __smem_i {$/
+_err_fatal_simple	utils.c	/^void _err_fatal_simple(const char *func, const cha/
+_err_fatal_simple_core	utils.c	/^void _err_fatal_simple_core(const char *func, cons/
+_get_pac	bntseq.c	/^#define _get_pac(pac, l) ((pac)[(l)>>2]>>((~(l)&3)/
+_hsaip_lt	bwtsw2_chain.c	/^#define _hsaip_lt(a, b) ((a).qbeg < (b).qbeg)$/
+_kswq_t	ksw.c	/^struct _kswq_t {$/
+_set_pac	bntseq.c	/^#define _set_pac(pac, l, c) ((pac)[(l)>>2] |= (c)</
+add1	bntseq.c	/^static uint8_t *add1(const kseq_t *seq, bntseq_t */
+aln_buf_t	bwape.c	/^} aln_buf_t;$/
+aln_score	bwtgap.c	/^#define aln_score(m,o,e,p) ((m)*(p)->s_mm + (o)*(p/
+alnreg_hlt	bwamem.c	/^#define alnreg_hlt(a, b)  ((a).score > (b).score |/
+alnreg_hlt2	bwamem.c	/^#define alnreg_hlt2(a, b) ((a).is_alt < (b).is_alt/
+alnreg_slt	bwamem.c	/^#define alnreg_slt(a, b) ((a).score > (b).score ||/
+alnreg_slt2	bwamem.c	/^#define alnreg_slt2(a, b) ((a).re < (b).re)$/
+average	bwt_gen.c	/^#define average(value1, value2)					( ((value1) & /
+b128_eq	bwape.c	/^#define b128_eq(a, b) ((a).x == (b).x && (a).y == /
+b128_hash	bwape.c	/^#define b128_hash(a) ((uint32_t)(a).x)$/
+bam1_aux	bamlite.h	/^#define bam1_aux(b) ((b)->data + (b)->core.n_cigar/
+bam1_cigar	bamlite.h	/^#define bam1_cigar(b) ((uint32_t*)((b)->data + (b)/
+bam1_core_t	bamlite.h	/^} bam1_core_t;$/
+bam1_mstrand	bamlite.h	/^#define bam1_mstrand(b) (((b)->core.flag&BAM_FMREV/
+bam1_qname	bamlite.h	/^#define bam1_qname(b) ((char*)((b)->data))$/
+bam1_qual	bamlite.h	/^#define bam1_qual(b) ((b)->data + (b)->core.n_ciga/
+bam1_seq	bamlite.h	/^#define bam1_seq(b) ((b)->data + (b)->core.n_cigar/
+bam1_seqi	bamlite.h	/^#define bam1_seqi(s, i) ((s)[(i)\/2] >> 4*(1-(i)%2/
+bam1_strand	bamlite.h	/^#define bam1_strand(b) (((b)->core.flag&BAM_FREVER/
+bam1_t	bamlite.h	/^} bam1_t;$/
+bamFile	bamlite.h	/^typedef gzFile bamFile;$/
+bam_destroy1	bamlite.h	/^#define bam_destroy1(b) do {					\\$/
+bam_header_destroy	bamlite.c	/^void bam_header_destroy(bam_header_t *header)$/
+bam_header_init	bamlite.c	/^bam_header_t *bam_header_init()$/
+bam_header_read	bamlite.c	/^bam_header_t *bam_header_read(bamFile fp)$/
+bam_header_t	bamlite.h	/^} bam_header_t;$/
+bam_init1	bamlite.h	/^#define bam_init1() ((bam1_t*)calloc(1, sizeof(bam/
+bam_is_big_endian	bamlite.c	/^static inline int bam_is_big_endian()$/
+bam_read1	bamlite.c	/^int bam_read1(bamFile fp, bam1_t *b)$/
+bam_swap_endian_2	bamlite.c	/^static inline uint16_t bam_swap_endian_2(uint16_t /
+bam_swap_endian_2p	bamlite.c	/^static inline void *bam_swap_endian_2p(void *x)$/
+bam_swap_endian_4	bamlite.c	/^static inline uint32_t bam_swap_endian_4(uint32_t /
+bam_swap_endian_4p	bamlite.c	/^static inline void *bam_swap_endian_4p(void *x)$/
+bam_swap_endian_8	bamlite.c	/^static inline uint64_t bam_swap_endian_8(uint64_t /
+bam_swap_endian_8p	bamlite.c	/^static inline void *bam_swap_endian_8p(void *x)$/
+bamlite_gzclose	bamlite.c	/^int bamlite_gzclose(gzFile file) {$/
+bamlite_gzopen	bamlite.c	/^gzFile bamlite_gzopen(const char *fn, const char */
+bamlite_gzread	bamlite.c	/^int bamlite_gzread(gzFile file, void *ptr, unsigne/
+bgint_t	bwt_gen.c	/^typedef uint64_t bgint_t;$/
+bns_cnt_ambi	bntseq.c	/^int bns_cnt_ambi(const bntseq_t *bns, int64_t pos_/
+bns_depos	bntseq.h	/^static inline int64_t bns_depos(const bntseq_t *bn/
+bns_destroy	bntseq.c	/^void bns_destroy(bntseq_t *bns)$/
+bns_dump	bntseq.c	/^void bns_dump(const bntseq_t *bns, const char *pre/
+bns_fasta2bntseq	bntseq.c	/^int64_t bns_fasta2bntseq(gzFile fp_fa, const char /
+bns_fetch_seq	bntseq.c	/^uint8_t *bns_fetch_seq(const bntseq_t *bns, const /
+bns_get_seq	bntseq.c	/^uint8_t *bns_get_seq(int64_t l_pac, const uint8_t /
+bns_intv2rid	bntseq.c	/^int bns_intv2rid(const bntseq_t *bns, int64_t rb, /
+bns_pac	bwtaln.h	/^#define bns_pac(pac, k) ((pac)[(k)>>2] >> ((~(k)&3/
+bns_pos2rid	bntseq.c	/^int bns_pos2rid(const bntseq_t *bns, int64_t pos_f/
+bns_restore	bntseq.c	/^bntseq_t *bns_restore(const char *prefix)$/
+bns_restore_core	bntseq.c	/^bntseq_t *bns_restore_core(const char *ann_filenam/
+bntamb1_t	bntseq.h	/^} bntamb1_t;$/
+bntann1_t	bntseq.h	/^} bntann1_t;$/
+bntseq_t	bntseq.h	/^} bntseq_t;$/
+bseq1_t	bwa.h	/^} bseq1_t;$/
+bseq_classify	bwa.c	/^void bseq_classify(int n, bseq1_t *seqs, int m[2],/
+bseq_read	bwa.c	/^bseq1_t *bseq_read(int chunk_size, int *n_, void */
+bsw2_aln	bwtsw2_aux.c	/^void bsw2_aln(const bsw2opt_t *opt, const bntseq_t/
+bsw2_aln1_core	bwtsw2_aux.c	/^static bwtsw2_t *bsw2_aln1_core(const bsw2opt_t *o/
+bsw2_aln_core	bwtsw2_aux.c	/^static void bsw2_aln_core(bsw2seq_t *_seq, const b/
+bsw2_chain_filter	bwtsw2_chain.c	/^void bsw2_chain_filter(const bsw2opt_t *opt, int l/
+bsw2_connectivity	bwtsw2_core.c	/^static khash_t(64) *bsw2_connectivity(const bwtl_t/
+bsw2_core	bwtsw2_core.c	/^bwtsw2_t **bsw2_core(const bntseq_t *bns, const bs/
+bsw2_debug_hits	bwtsw2_aux.c	/^void bsw2_debug_hits(const bwtsw2_t *b)$/
+bsw2_destroy	bwtsw2_aux.c	/^void bsw2_destroy(bwtsw2_t *b)$/
+bsw2_dup_no_cigar	bwtsw2_aux.c	/^bwtsw2_t *bsw2_dup_no_cigar(const bwtsw2_t *b)$/
+bsw2_extend_left	bwtsw2_aux.c	/^void bsw2_extend_left(const bsw2opt_t *opt, bwtsw2/
+bsw2_extend_rght	bwtsw2_aux.c	/^void bsw2_extend_rght(const bsw2opt_t *opt, bwtsw2/
+bsw2_global_destroy	bwtsw2_core.c	/^void bsw2_global_destroy(bsw2global_t *pool)$/
+bsw2_global_init	bwtsw2_core.c	/^bsw2global_t *bsw2_global_init()$/
+bsw2_init_opt	bwtsw2_aux.c	/^bsw2opt_t *bsw2_init_opt()$/
+bsw2_pair	bwtsw2_pair.c	/^void bsw2_pair(const bsw2opt_t *opt, int64_t l_pac/
+bsw2_pair1	bwtsw2_pair.c	/^void bsw2_pair1(const bsw2opt_t *opt, int64_t l_pa/
+bsw2_resolve_duphits	bwtsw2_core.c	/^int bsw2_resolve_duphits(const bntseq_t *bns, cons/
+bsw2_resolve_query_overlaps	bwtsw2_core.c	/^int bsw2_resolve_query_overlaps(bwtsw2_t *b, float/
+bsw2_stat	bwtsw2_pair.c	/^bsw2pestat_t bsw2_stat(int n, bwtsw2_t **buf, kstr/
+bsw2aux_t	bwtsw2.h	/^} bsw2aux_t;$/
+bsw2entry_p	bwtsw2_core.c	/^} bsw2entry_t, *bsw2entry_p;$/
+bsw2global_t	bwtsw2.h	/^} bsw2global_t;$/
+bsw2hit_t	bwtsw2.h	/^} bsw2hit_t;$/
+bsw2opt_t	bwtsw2.h	/^} bsw2opt_t;$/
+bsw2pestat_t	bwtsw2_pair.c	/^} bsw2pestat_t;$/
+bsw2seq1_t	bwtsw2.h	/^} bsw2seq1_t;$/
+bsw2seq_t	bwtsw2_aux.c	/^} bsw2seq_t;$/
+bsw2stack_t	bwtsw2_core.c	/^} bsw2stack_t;$/
+bwa_aln	bwtaln.c	/^int bwa_aln(int argc, char *argv[])$/
+bwa_aln2seq	bwase.c	/^void bwa_aln2seq(int n_aln, const bwt_aln1_t *aln,/
+bwa_aln2seq_core	bwase.c	/^void bwa_aln2seq_core(int n_aln, const bwt_aln1_t /
+bwa_aln_core	bwtaln.c	/^void bwa_aln_core(const char *prefix, const char */
+bwa_approx_mapQ	bwase.c	/^int bwa_approx_mapQ(const bwa_seq_t *p, int mm)$/
+bwa_bam_open	bwaseqio.c	/^bwa_seqio_t *bwa_bam_open(const char *fn, int whic/
+bwa_bwtsw2	bwtsw2_main.c	/^int bwa_bwtsw2(int argc, char *argv[])$/
+bwa_cal_maxdiff	bwtaln.c	/^int bwa_cal_maxdiff(int l, double err, double thre/
+bwa_cal_md1	bwase.c	/^char *bwa_cal_md1(int n_cigar, bwa_cigar_t *cigar,/
+bwa_cal_pac_pos	bwase.c	/^void bwa_cal_pac_pos(const bntseq_t *bns, const ch/
+bwa_cal_pac_pos_core	bwase.c	/^void bwa_cal_pac_pos_core(const bntseq_t *bns, con/
+bwa_cal_pac_pos_pe	bwape.c	/^int bwa_cal_pac_pos_pe(const bntseq_t *bns, const /
+bwa_cal_sa_reg_gap	bwtaln.c	/^void bwa_cal_sa_reg_gap(int tid, bwt_t *const bwt,/
+bwa_cigar_t	bwtaln.h	/^typedef uint16_t bwa_cigar_t;$/
+bwa_correct_trimmed	bwase.c	/^void bwa_correct_trimmed(bwa_seq_t *s)$/
+bwa_fa2pac	bntseq.c	/^int bwa_fa2pac(int argc, char *argv[])$/
+bwa_fill_scmat	bwa.c	/^void bwa_fill_scmat(int a, int b, int8_t mat[25])$/
+bwa_free_read_seq	bwaseqio.c	/^void bwa_free_read_seq(int n_seqs, bwa_seq_t *seqs/
+bwa_gen_cigar2	bwa.c	/^uint32_t *bwa_gen_cigar2(const int8_t mat[25], int/
+bwa_idx_build	bwtindex.c	/^int bwa_idx_build(const char *fa, const char *pref/
+bwa_idx_load_from_shm	bwashm.c	/^bwaidx_t *bwa_idx_load_from_shm(const char *hint)$/
+bwa_init_pe_opt	bwape.c	/^pe_opt_t *bwa_init_pe_opt()$/
+bwa_open_reads	bwtaln.c	/^bwa_seqio_t *bwa_open_reads(int mode, const char */
+bwa_pemerge	pemerge.c	/^int bwa_pemerge(const pem_opt_t *opt, bseq1_t x[2]/
+bwa_print_sam1	bwase.c	/^void bwa_print_sam1(const bntseq_t *bns, bwa_seq_t/
+bwa_print_seq	bwase.c	/^void bwa_print_seq(FILE *stream, bwa_seq_t *seq) {/
+bwa_read_bam	bwaseqio.c	/^static bwa_seq_t *bwa_read_bam(bwa_seqio_t *bs, in/
+bwa_read_seq	bwaseqio.c	/^bwa_seq_t *bwa_read_seq(bwa_seqio_t *bs, int n_nee/
+bwa_refine_gapped	bwase.c	/^void bwa_refine_gapped(const bntseq_t *bns, int n_/
+bwa_refine_gapped_core	bwase.c	/^bwa_cigar_t *bwa_refine_gapped_core(bwtint_t l_pac/
+bwa_sa2pos	bwase.c	/^bwtint_t bwa_sa2pos(const bntseq_t *bns, const bwt/
+bwa_sai2sam_pe	bwape.c	/^int bwa_sai2sam_pe(int argc, char *argv[])$/
+bwa_sai2sam_se	bwase.c	/^int bwa_sai2sam_se(int argc, char *argv[])$/
+bwa_sai2sam_se_core	bwase.c	/^void bwa_sai2sam_se_core(const char *prefix, const/
+bwa_seq_close	bwaseqio.c	/^void bwa_seq_close(bwa_seqio_t *bs)$/
+bwa_seq_len	bwtindex.c	/^int64_t bwa_seq_len(const char *fn_pac)$/
+bwa_seq_open	bwaseqio.c	/^bwa_seqio_t *bwa_seq_open(const char *fn)$/
+bwa_seq_t	bwtaln.h	/^} bwa_seq_t;$/
+bwa_seqio_t	bwtaln.h	/^struct __bwa_seqio_t;$/
+bwa_shm_destroy	bwashm.c	/^int bwa_shm_destroy(void)$/
+bwa_shm_list	bwashm.c	/^int bwa_shm_list(void)$/
+bwa_shm_stage	bwashm.c	/^int bwa_shm_stage(bwaidx_t *idx, const char *hint,/
+bwa_shm_test	bwashm.c	/^int bwa_shm_test(const char *hint)$/
+bwa_sw_core	bwape.c	/^bwa_cigar_t *bwa_sw_core(bwtint_t l_pac, const uby/
+bwa_trim_read	bwaseqio.c	/^int bwa_trim_read(int trim_qual, bwa_seq_t *p)$/
+bwaidx_t	bwa.h	/^} bwaidx_t;$/
+bwase_initialize	bwase.c	/^void bwase_initialize() $/
+bwt_2occ	ChangeLog	/^ * use bwt_2occ() and bwt_2occ4() in other functio/
+bwt_B0	bwt.h	/^#define bwt_B0(b, k) (bwt_bwt(b, k)>>((~(k)&0xf)<</
+bwt_B00	bwtindex.c	/^#define bwt_B00(b, k) ((b)->bwt[(k)>>4]>>((~(k)&0x/
+bwt_aln1_t	bwtaln.h	/^} bwt_aln1_t;$/
+bwt_bwt	bwt.h	/^#define bwt_bwt(b, k) ((b)->bwt[((k)>>7<<4) + size/
+bwt_bwtgen	bwt_gen.c	/^void bwt_bwtgen(const char *fn_pac, const char *fn/
+bwt_bwtgen2	bwt_gen.c	/^void bwt_bwtgen2(const char *fn_pac, const char *f/
+bwt_bwtgen_main	bwt_gen.c	/^int bwt_bwtgen_main(int argc, char *argv[])$/
+bwt_bwtupdate_core	bwtindex.c	/^void bwt_bwtupdate_core(bwt_t *bwt)$/
+bwt_cal_sa	bwt.c	/^void bwt_cal_sa(bwt_t *bwt, int intv)$/
+bwt_cal_width	bwtaln.c	/^int bwt_cal_width(const bwt_t *bwt, int len, const/
+bwt_destroy	bwt.c	/^void bwt_destroy(bwt_t *bwt)$/
+bwt_dump_bwt	bwt.c	/^void bwt_dump_bwt(const char *fn, const bwt_t *bwt/
+bwt_dump_sa	bwt.c	/^void bwt_dump_sa(const char *fn, const bwt_t *bwt)/
+bwt_extend	bwt.c	/^void bwt_extend(const bwt_t *bwt, const bwtintv_t /
+bwt_gen_cnt_table	bwt.c	/^void bwt_gen_cnt_table(bwt_t *bwt)$/
+bwt_match_exact	bwt.c	/^int bwt_match_exact(const bwt_t *bwt, int len, con/
+bwt_match_exact_alt	bwt.c	/^int bwt_match_exact_alt(const bwt_t *bwt, int len,/
+bwt_match_gap	bwtgap.c	/^bwt_aln1_t *bwt_match_gap(bwt_t *const bwt, int le/
+bwt_multi1_t	bwtaln.h	/^} bwt_multi1_t;$/
+bwt_occ	bwt.c	/^bwtint_t bwt_occ(const bwt_t *bwt, bwtint_t k, uby/
+bwt_occ4	bwt.c	/^void bwt_occ4(const bwt_t *bwt, bwtint_t k, bwtint/
+bwt_occ_intv	bwt.h	/^#define bwt_occ_intv(b, k) ((b)->bwt + ((k)>>7<<4)/
+bwt_pac2bwt	bwtindex.c	/^bwt_t *bwt_pac2bwt(const char *fn_pac, int use_is)/
+bwt_restore_bwt	bwt.c	/^bwt_t *bwt_restore_bwt(const char *fn)$/
+bwt_restore_sa	bwt.c	/^void bwt_restore_sa(const char *fn, bwt_t *bwt)$/
+bwt_reverse_intvs	bwt.c	/^static void bwt_reverse_intvs(bwtintv_v *p)$/
+bwt_sa	bwt.c	/^bwtint_t bwt_sa(const bwt_t *bwt, bwtint_t k)$/
+bwt_seed_strategy1	bwt.c	/^int bwt_seed_strategy1(const bwt_t *bwt, int len, /
+bwt_set_intv	bwt.h	/^#define bwt_set_intv(bwt, c, ik) ((ik).x[0] = (bwt/
+bwt_smem1	bwt.c	/^int bwt_smem1(const bwt_t *bwt, int len, const uin/
+bwt_smem1a	bwt.c	/^int bwt_smem1a(const bwt_t *bwt, int len, const ui/
+bwt_t	bwt.h	/^} bwt_t;$/
+bwt_width_t	bwtaln.h	/^} bwt_width_t;$/
+bwtint_t	bwt.h	/^typedef uint64_t bwtint_t;$/
+bwtintv_t	bwt.h	/^} bwtintv_t;$/
+bwtintv_v	bwt.h	/^typedef struct { size_t n, m; bwtintv_t *a; } bwti/
+bwtl_2occ4	bwt_lite.c	/^void bwtl_2occ4(const bwtl_t *bwt, uint32_t k, uin/
+bwtl_B0	bwt_lite.h	/^#define bwtl_B0(b, k) ((b)->bwt[(k)>>4]>>((~(k)&0x/
+bwtl_destroy	bwt_lite.c	/^void bwtl_destroy(bwtl_t *bwt)$/
+bwtl_occ	bwt_lite.c	/^uint32_t bwtl_occ(const bwtl_t *bwt, uint32_t k, u/
+bwtl_occ4	bwt_lite.c	/^void bwtl_occ4(const bwtl_t *bwt, uint32_t k, uint/
+bwtl_seq2bwtl	bwt_lite.c	/^bwtl_t *bwtl_seq2bwtl(int len, const uint8_t *seq)/
+bwtl_t	bwt_lite.h	/^} bwtl_t;$/
+bwtsw2_t	bwtsw2.h	/^} bwtsw2_t;$/
+cal_sub	bwamem_pair.c	/^static int cal_sub(const mem_opt_t *opt, mem_alnre/
+ceilLog2	bwt_gen.c	/^\/\/ for ceilLog2()$/
+chain_cmp	bwamem.c	/^#define chain_cmp(a, b) (((b).pos < (a).pos) - ((a/
+chr	is.c	/^#define chr(i) (cs == sizeof(int) ? ((const int *)/
+cmd2argv	kopen.c	/^static char **cmd2argv(const char *cmd)$/
+contigs	README-alt.md	/^(chromosome known but location unknown), unplaced /
+cputime	utils.c	/^double cputime()$/
+cut_tail	bwtsw2_core.c	/^static void cut_tail(bsw2entry_t *u, int T, bsw2en/
+die	qualfa2fq.pl	/^die("Usage: qualfa2fq.pl <in.fasta> <in.qual>\\n")/
+eh_t	ksw.c	/^} eh_t;$/
+err_fatal	utils.c	/^void err_fatal(const char *header, const char *fmt/
+err_fatal_core	utils.c	/^void err_fatal_core(const char *header, const char/
+err_fatal_simple	utils.h	/^#define err_fatal_simple(msg) _err_fatal_simple(__/
+err_fatal_simple_core	utils.h	/^#define err_fatal_simple_core(msg) _err_fatal_simp/
+err_fclose	utils.c	/^int err_fclose(FILE *stream) $/
+err_fflush	utils.c	/^int err_fflush(FILE *stream) $/
+err_fprintf	utils.c	/^int err_fprintf(FILE *stream, const char *format, /
+err_fputc	utils.c	/^int err_fputc(int c, FILE *stream)$/
+err_fputs	utils.c	/^int err_fputs(const char *s, FILE *stream)$/
+err_fread_noeof	utils.c	/^size_t err_fread_noeof(void *ptr, size_t size, siz/
+err_fseek	utils.c	/^int err_fseek(FILE *stream, long offset, int whenc/
+err_ftell	utils.c	/^long err_ftell(FILE *stream)$/
+err_fwrite	utils.c	/^size_t err_fwrite(const void *ptr, size_t size, si/
+err_gzclose	utils.c	/^int err_gzclose(gzFile file)$/
+err_gzread	utils.c	/^int err_gzread(gzFile file, void *ptr, unsigned in/
+err_printf	utils.c	/^int err_printf(const char *format, ...) $/
+err_putchar	utils.h	/^#define err_putchar(C) err_fputc((C), stdout)$/
+err_puts	utils.c	/^int err_puts(const char *s)$/
+err_rewind	utils.h	/^#define err_rewind(FP) err_fseek((FP), 0, SEEK_SET/
+err_xreopen_core	utils.c	/^FILE *err_xreopen_core(const char *func, const cha/
+err_xzopen_core	utils.c	/^gzFile err_xzopen_core(const char *func, const cha/
+fill_cell	bwtsw2_core.c	/^static inline int fill_cell(const bsw2opt_t *o, in/
+fix_cigar	bwtsw2_aux.c	/^static int fix_cigar(const bntseq_t *bns, bsw2hit_/
+flag	README.md	/^0x800 SAM flag (supplementary alignment) and are h/
+flag_fr	bwtsw2_aux.c	/^static void flag_fr(bwtsw2_t *b[2])$/
+for	bwape.c	/^		for (j = 0; j < 2; ++j)$/
+fread_fix	bwt.c	/^static bwtint_t fread_fix(FILE *fp, bwtint_t size,/
+ftp_open	kopen.c	/^static int ftp_open(const char *fn)$/
+ftpaux_t	kopen.c	/^} ftpaux_t;$/
+gap_destroy_stack	bwtgap.c	/^void gap_destroy_stack(gap_stack_t *stack)$/
+gap_entry_t	bwtgap.h	/^} gap_entry_t;$/
+gap_init_opt	bwtaln.c	/^gap_opt_t *gap_init_opt()$/
+gap_init_stack	bwtgap.c	/^gap_stack_t *gap_init_stack(int max_mm, int max_ga/
+gap_init_stack2	bwtgap.c	/^gap_stack_t *gap_init_stack2(int max_score)$/
+gap_opt_t	bwtaln.h	/^} gap_opt_t;$/
+gap_pop	bwtgap.c	/^static inline void gap_pop(gap_stack_t *stack, gap/
+gap_push	bwtgap.c	/^static inline void gap_push(gap_stack_t *stack, in/
+gap_reset_stack	bwtgap.c	/^static void gap_reset_stack(gap_stack_t *stack)$/
+gap_shadow	bwtgap.c	/^static inline void gap_shadow(int x, int len, bwti/
+gap_stack1_t	bwtgap.h	/^} gap_stack1_t;$/
+gap_stack_t	bwtgap.h	/^} gap_stack_t;$/
+gen_cigar	bwtsw2_aux.c	/^static void gen_cigar(const bsw2opt_t *opt, int lq/
+getBuckets	is.c	/^static void getBuckets(const int *C, int *B, int k/
+getCounts	is.c	/^static void getCounts(const unsigned char *T, int /
+get_pri_idx	bwamem_extra.c	/^static inline int get_pri_idx(double XA_drop_ratio/
+hash_64	utils.h	/^static inline uint64_t hash_64(uint64_t key)$/
+hsaip_t	bwtsw2_chain.c	/^} hsaip_t;$/
+http_open	kopen.c	/^static int http_open(const char *fn)$/
+if	bwamem.c	/^	if (buf == 0) smem_aux_destroy(aux);$/
+ifeq	Makefile	/^ifeq ($(shell uname -s),Linux)$/
+induceSA	is.c	/^static void induceSA(const unsigned char *T, int */
+infer_isize	bwape.c	/^static int infer_isize(int n_seqs, bwa_seq_t *seqs/
+init_bwtsw2	bwtsw2_core.c	/^static void init_bwtsw2(const bwtl_t *target, cons/
+initializeVAL	bwt_gen.c	/^static void initializeVAL(unsigned int *startAddr,/
+initializeVAL_bg	bwt_gen.c	/^static void initializeVAL_bg(bgint_t *startAddr, c/
+int_log2	bwtgap.c	/^static inline int int_log2(uint32_t v)$/
+int_v	bwamem.c	/^typedef kvec_t(int) int_v;$/
+intv_lt	bwamem.c	/^#define intv_lt(a, b) ((a).info < (b).info)$/
+is_bwt	is.c	/^int is_bwt(ubyte_t *T, int n)$/
+is_sa	is.c	/^int is_sa(const ubyte_t *T, int *SA, int n)$/
+isize_info_t	bwape.c	/^} isize_info_t;$/
+kb_del	kbtree.h	/^#define kb_del(name, b, k) kb_del_##name(b, k)$/
+kb_delp	kbtree.h	/^#define kb_delp(name, b, k) kb_delp_##name(b, k)$/
+kb_destroy	kbtree.h	/^#define kb_destroy(name, b) __kb_destroy(b)$/
+kb_generic_cmp	kbtree.h	/^#define kb_generic_cmp(a, b) (((b) < (a)) - ((a) </
+kb_get	kbtree.h	/^#define kb_get(name, b, k) kb_get_##name(b, k)$/
+kb_getp	kbtree.h	/^#define kb_getp(name, b, k) kb_getp_##name(b, k)$/
+kb_init	kbtree.h	/^#define kb_init(name, s) kb_init_##name(s)$/
+kb_interval	kbtree.h	/^#define kb_interval(name, b, k, l, u) kb_interval_/
+kb_intervalp	kbtree.h	/^#define kb_intervalp(name, b, k, l, u) kb_interval/
+kb_put	kbtree.h	/^#define kb_put(name, b, k) kb_put_##name(b, k)$/
+kb_putp	kbtree.h	/^#define kb_putp(name, b, k) kb_putp_##name(b, k)$/
+kb_size	kbtree.h	/^#define kb_size(b) ((b)->n_keys)$/
+kb_str_cmp	kbtree.h	/^#define kb_str_cmp(a, b) strcmp(a, b)$/
+kbnode_t	kbtree.h	/^} kbnode_t;$/
+kbtree_t	kbtree.h	/^#define kbtree_t(name) kbtree_##name##_t$/
+kcalloc	khash.h	/^#define kcalloc(N,Z) calloc(N,Z)$/
+kclose	kopen.c	/^int kclose(void *a)$/
+kfree	khash.h	/^#define kfree(P) free(P)$/
+kftp_get_response	kopen.c	/^static int kftp_get_response(ftpaux_t *aux)$/
+kftp_send_cmd	kopen.c	/^static int kftp_send_cmd(ftpaux_t *aux, const char/
+kh_begin	khash.h	/^#define kh_begin(h) (khint_t)(0)$/
+kh_clear	khash.h	/^#define kh_clear(name, h) kh_clear_##name(h)$/
+kh_cstr_t	khash.h	/^typedef const char *kh_cstr_t;$/
+kh_del	khash.h	/^#define kh_del(name, h, k) kh_del_##name(h, k)$/
+kh_destroy	khash.h	/^#define kh_destroy(name, h) kh_destroy_##name(h)$/
+kh_end	khash.h	/^#define kh_end(h) ((h)->n_buckets)$/
+kh_exist	khash.h	/^#define kh_exist(h, x) (!__ac_iseither((h)->flags,/
+kh_foreach	khash.h	/^#define kh_foreach(h, kvar, vvar, code) { khint_t /
+kh_foreach_value	khash.h	/^#define kh_foreach_value(h, vvar, code) { khint_t /
+kh_get	khash.h	/^#define kh_get(name, h, k) kh_get_##name(h, k)$/
+kh_init	khash.h	/^#define kh_init(name) kh_init_##name()$/
+kh_int64_hash_equal	khash.h	/^#define kh_int64_hash_equal(a, b) ((a) == (b))$/
+kh_int64_hash_func	khash.h	/^#define kh_int64_hash_func(key) (khint32_t)((key)>/
+kh_int_hash_equal	khash.h	/^#define kh_int_hash_equal(a, b) ((a) == (b))$/
+kh_int_hash_func	khash.h	/^#define kh_int_hash_func(key) (khint32_t)(key)$/
+kh_int_hash_func2	khash.h	/^#define kh_int_hash_func2(k) __ac_Wang_hash((khint/
+kh_key	khash.h	/^#define kh_key(h, x) ((h)->keys[x])$/
+kh_n_buckets	khash.h	/^#define kh_n_buckets(h) ((h)->n_buckets)$/
+kh_put	khash.h	/^#define kh_put(name, h, k, r) kh_put_##name(h, k, /
+kh_resize	khash.h	/^#define kh_resize(name, h, s) kh_resize_##name(h, /
+kh_size	khash.h	/^#define kh_size(h) ((h)->size)$/
+kh_str_hash_equal	khash.h	/^#define kh_str_hash_equal(a, b) (strcmp(a, b) == 0/
+kh_str_hash_func	khash.h	/^#define kh_str_hash_func(key) __ac_X31_hash_string/
+kh_val	khash.h	/^#define kh_val(h, x) ((h)->vals[x])$/
+kh_value	khash.h	/^#define kh_value(h, x) ((h)->vals[x])$/
+khash_t	khash.h	/^#define khash_t(name) kh_##name##_t$/
+khint32_t	khash.h	/^typedef unsigned int khint32_t;$/
+khint64_t	khash.h	/^typedef unsigned long khint64_t;$/
+khint_t	khash.h	/^typedef khint32_t khint_t;$/
+khiter_t	khash.h	/^typedef khint_t khiter_t;$/
+kmalloc	khash.h	/^#define kmalloc(Z) malloc(Z)$/
+koaux_t	kopen.c	/^} koaux_t;$/
+kopen	kopen.c	/^void *kopen(const char *fn, int *_fd)$/
+kputc	kstring.h	/^static inline int kputc(int c, kstring_t *s)$/
+kputl	kstring.h	/^static inline int kputl(long c, kstring_t *s)$/
+kputs	kstring.h	/^static inline int kputs(const char *p, kstring_t */
+kputsn	kstring.h	/^static inline int kputsn(const char *p, int l, kst/
+kputuw	kstring.h	/^static inline int kputuw(unsigned c, kstring_t *s)/
+kputw	kstring.h	/^static inline int kputw(int c, kstring_t *s)$/
+krealloc	khash.h	/^#define krealloc(P,Z) realloc(P,Z)$/
+kroundup32	bamlite.h	/^#define kroundup32(x) (--(x), (x)|=(x)>>1, (x)|=(x/
+ks_combsort	ksort.h	/^#define ks_combsort(name, n, a) ks_combsort_##name/
+ks_eof	kseq.h	/^#define ks_eof(ks) ((ks)->is_eof && (ks)->begin >=/
+ks_heapadjust	ksort.h	/^#define ks_heapadjust(name, i, n, a) ks_heapadjust/
+ks_heapmake	ksort.h	/^#define ks_heapmake(name, n, a) ks_heapmake_##name/
+ks_heapsort	ksort.h	/^#define ks_heapsort(name, n, a) ks_heapsort_##name/
+ks_introsort	ksort.h	/^#define ks_introsort(name, n, a) ks_introsort_##na/
+ks_isort_stack_t	ksort.h	/^} ks_isort_stack_t;$/
+ks_ksmall	ksort.h	/^#define ks_ksmall(name, n, a, k) ks_ksmall_##name(/
+ks_lt_generic	ksort.h	/^#define ks_lt_generic(a, b) ((a) < (b))$/
+ks_lt_str	ksort.h	/^#define ks_lt_str(a, b) (strcmp((a), (b)) < 0)$/
+ks_mergesort	ksort.h	/^#define ks_mergesort(name, n, a, t) ks_mergesort_#/
+ks_resize	kstring.h	/^static inline void ks_resize(kstring_t *s, size_t /
+ks_rewind	kseq.h	/^#define ks_rewind(ks) ((ks)->is_eof = (ks)->begin /
+kseq2bseq1	bwa.c	/^static inline void kseq2bseq1(const kseq_t *ks, bs/
+kseq_rewind	kseq.h	/^#define kseq_rewind(ks) ((ks)->last_char = (ks)->f/
+ksprintf	kstring.c	/^int ksprintf(kstring_t *s, const char *fmt, ...)$/
+ksstr_t	ksort.h	/^typedef const char *ksstr_t;$/
+kstring_t	kseq.h	/^} kstring_t;$/
+ksw_align	ksw.c	/^kswr_t ksw_align(int qlen, uint8_t *query, int tle/
+ksw_align2	ksw.c	/^kswr_t ksw_align2(int qlen, uint8_t *query, int tl/
+ksw_extend	ksw.c	/^int ksw_extend(int qlen, const uint8_t *query, int/
+ksw_extend2	ksw.c	/^int ksw_extend2(int qlen, const uint8_t *query, in/
+ksw_global	ksw.c	/^int ksw_global(int qlen, const uint8_t *query, int/
+ksw_global2	ksw.c	/^int ksw_global2(int qlen, const uint8_t *query, in/
+ksw_qinit	ksw.c	/^kswq_t *ksw_qinit(int size, int qlen, const uint8_/
+kswq_t	ksw.h	/^struct _kswq_t;$/
+kswr_t	ksw.h	/^} kswr_t;$/
+kt_for	kthread.c	/^void kt_for(int n_threads, void (*func)(void*,long/
+kt_for_t	kthread.c	/^} kt_for_t;$/
+kt_pipeline	kthread.c	/^void kt_pipeline(int n_threads, void *(*func)(void/
+ktf_worker	kthread.c	/^static void *ktf_worker(void *data)$/
+ktf_worker_t	kthread.c	/^} ktf_worker_t;$/
+ktp_data_t	fastmap.c	/^} ktp_data_t;$/
+ktp_t	kthread.c	/^} ktp_t;$/
+ktp_worker	kthread.c	/^static void *ktp_worker(void *data)$/
+ktp_worker_t	kthread.c	/^} ktp_worker_t;$/
+kv_A	kvec.h	/^#define kv_A(v, i) ((v).a[(i)])$/
+kv_a	kvec.h	/^#define kv_a(type, v, i) (((v).m <= (size_t)(i)? /
+kv_copy	kvec.h	/^#define kv_copy(type, v1, v0) do {							\\$/
+kv_destroy	kvec.h	/^#define kv_destroy(v) free((v).a)$/
+kv_init	kvec.h	/^#define kv_init(v) ((v).n = (v).m = 0, (v).a = 0)$/
+kv_max	kvec.h	/^#define kv_max(v) ((v).m)$/
+kv_pop	kvec.h	/^#define kv_pop(v) ((v).a[--(v).n])$/
+kv_push	kvec.h	/^#define kv_push(type, v, x) do {									\\$/
+kv_pushp	kvec.h	/^#define kv_pushp(type, v) ((((v).n == (v).m)?					/
+kv_resize	kvec.h	/^#define kv_resize(type, v, s)  ((v).m = (s), (v).a/
+kv_roundup32	kvec.h	/^#define kv_roundup32(x) (--(x), (x)|=(x)>>1, (x)|=/
+kv_size	kvec.h	/^#define kv_size(v) ((v).n)$/
+kvec_t	kvec.h	/^#define kvec_t(type) struct { size_t n, m; type *a/
+main_fastmap	fastmap.c	/^int main_fastmap(int argc, char *argv[])$/
+main_mem	fastmap.c	/^int main_mem(int argc, char *argv[])$/
+main_pemerge	pemerge.c	/^int main_pemerge(int argc, char *argv[])$/
+main_shm	bwashm.c	/^int main_shm(int argc, char *argv[])$/
+matches	bwa.1	/^algorithm works by seeding alignments with maximal/
+max	bwt_gen.c	/^#define max(value1, value2)						( ((value1) > (va/
+med3	bwt_gen.c	/^#define med3(a, b, c)							( a<b ? (b<c ? b : a<c/
+mem_align1	bwamem_extra.c	/^mem_alnreg_v mem_align1(const mem_opt_t *opt, cons/
+mem_alnreg_t	bwamem.h	/^} mem_alnreg_t;$/
+mem_alnreg_v	bwamem.h	/^typedef struct { size_t n, m; mem_alnreg_t *a; } m/
+mem_chain_t	bwamem.c	/^} mem_chain_t;$/
+mem_chain_v	bwamem.c	/^typedef struct { size_t n, m; mem_chain_t *a;  } m/
+mem_collect_intv	bwamem.c	/^static void mem_collect_intv(const mem_opt_t *opt,/
+mem_infer_dir	bwamem_pair.c	/^static inline int mem_infer_dir(int64_t l_pac, int/
+mem_mark_primary_se	bwamem_extra.c	/^char **mem_gen_alt(const mem_opt_t *opt, const bnt/
+mem_matesw	bwamem_pair.c	/^int mem_matesw(const mem_opt_t *opt, const bntseq_/
+mem_opt_init	bwamem.c	/^mem_opt_t *mem_opt_init()$/
+mem_opt_t	bwamem.h	/^} mem_opt_t;$/
+mem_pair	bwamem_pair.c	/^int mem_pair(const mem_opt_t *opt, const bntseq_t /
+mem_pestat	bwamem_pair.c	/^void mem_pestat(const mem_opt_t *opt, int64_t l_pa/
+mem_pestat_t	bwamem.h	/^} mem_pestat_t;$/
+mem_sam_pe	bwamem_pair.c	/^int mem_sam_pe(const mem_opt_t *opt, const bntseq_/
+mem_seed_t	bwamem.c	/^} mem_seed_t; \/\/ unaligned memory$/
+mempool_t	bwtsw2_core.c	/^} mempool_t;$/
+merge_entry	bwtsw2_core.c	/^static void merge_entry(const bsw2opt_t * __restri/
+merge_hits	bwtsw2_aux.c	/^static void merge_hits(bwtsw2_t *b[2], int l, int /
+min	bwt_gen.c	/^#define min(value1, value2)						( ((value1) < (va/
+move_backward	rle.c	/^#define move_backward(_x) \\$/
+mp_alloc	bwtsw2_core.c	/^inline static bsw2entry_p mp_alloc(mempool_t *mp)$/
+mp_destroy	bwtsw2_core.c	/^static void mp_destroy(struct __mempool_t *mp)$/
+mp_free	bwtsw2_core.c	/^inline static void mp_free(mempool_t *mp, bsw2entr/
+mp_init	rope.c	/^static mempool_t *mp_init(int size)$/
+pair64_lt	utils.c	/^#define pair64_lt(a, b) ((a).x < (b).x || ((a).x =/
+pair64_t	utils.h	/^} pair64_t;$/
+pair64_v	utils.h	/^typedef struct { size_t n, m; pair64_t *a; } pair6/
+pairaux_t	bwtsw2_pair.c	/^} pairaux_t;$/
+pairing	bwape.c	/^static int pairing(bwa_seq_t *p[2], pe_data_t *d, /
+pe_opt_t	bwtaln.h	/^} pe_opt_t;$/
+pem_opt_init	pemerge.c	/^pem_opt_t *pem_opt_init()$/
+pem_opt_t	pemerge.c	/^} pem_opt_t;$/
+pos_5	bwase.c	/^static int64_t pos_5(const bwa_seq_t *p)$/
+pos_end	bwase.c	/^int64_t pos_end(const bwa_seq_t *p)$/
+poslist_t	bwape.c	/^} poslist_t;$/
+print_bseq	pemerge.c	/^static inline void print_bseq(const bseq1_t *s, in/
+print_hits	bwtsw2_aux.c	/^static void print_hits(const bntseq_t *bns, const /
+process	fastmap.c	/^static void *process(void *shared, int step, void /
+process_seqs	bwtsw2_aux.c	/^static void process_seqs(bsw2seq_t *_seq, const bs/
+push_array_p	bwtsw2_core.c	/^static inline bsw2cell_t *push_array_p(bsw2entry_t/
+push_cigar	ksw.c	/^static inline uint32_t *push_cigar(int *n_cigar, i/
+qintv_eq	bwtsw2_core.c	/^#define qintv_eq(a, b) ((a).k == (b).k && (a).l ==/
+qintv_hash	bwtsw2_core.c	/^#define qintv_hash(a) ((a).k>>7^(a).l<<17)$/
+qintv_t	bwtsw2_core.c	/^} qintv_t;$/
+qsint_t	QSufSort.h	/^typedef int64_t qsint_t;$/
+raw_mapq	bwamem_pair.c	/^#define raw_mapq(diff, a) ((int)(6.02 * (diff) \/ /
+realtime	utils.c	/^double realtime()$/
+remove_duplicate	bwtsw2_core.c	/^static inline void remove_duplicate(bsw2entry_t *u/
+revseq	ksw.c	/^static inline void revseq(int l, uint8_t *s)$/
+rle_count	rle.c	/^void rle_count(const uint8_t *block, int64_t cnt[6/
+rle_insert	rle.c	/^int rle_insert(uint8_t *block, int64_t x, int a, i/
+rle_insert_cached	rle.c	/^int rle_insert_cached(uint8_t *block, int64_t x, i/
+rle_nptr	rle.h	/^#define rle_nptr(block) ((uint16_t*)(block))$/
+rle_print	rle.c	/^void rle_print(const uint8_t *block, int expand)$/
+rle_rank1a	rle.h	/^	#define rle_rank1a(block, x, cx, ec) rle_rank2a(b/
+rle_rank2a	rle.c	/^void rle_rank2a(const uint8_t *block, int64_t x, i/
+rle_split	rle.c	/^void rle_split(uint8_t *block, uint8_t *new_block)/
+rope_count_to_leaf	rope.c	/^static rpnode_t *rope_count_to_leaf(const rope_t */
+rope_destroy	rope.c	/^void rope_destroy(rope_t *rope)$/
+rope_dump	rope.c	/^void rope_dump(const rope_t *r, FILE *fp)$/
+rope_dump_node	rope.c	/^void rope_dump_node(const rpnode_t *p, FILE *fp)$/
+rope_init	rope.c	/^rope_t *rope_init(int max_nodes, int block_len)$/
+rope_itr_first	rope.c	/^void rope_itr_first(const rope_t *rope, rpitr_t *i/
+rope_itr_next_block	rope.c	/^const uint8_t *rope_itr_next_block(rpitr_t *i)$/
+rope_print_node	rope.c	/^void rope_print_node(const rpnode_t *p)$/
+rope_rank1a	rope.h	/^	#define rope_rank1a(rope, x, cx) rope_rank2a(rope/
+rope_rank2a	rope.c	/^void rope_rank2a(const rope_t *rope, int64_t x, in/
+rope_restore	rope.c	/^rope_t *rope_restore(FILE *fp)$/
+rope_restore_node	rope.c	/^rpnode_t *rope_restore_node(const rope_t *r, FILE /
+rope_t	rope.h	/^} rope_t;$/
+rpcache_t	rope.h	/^} rpcache_t;$/
+rpitr_t	rope.h	/^} rpitr_t;$/
+rpnode_t	rope.h	/^} rpnode_t;$/
+run	rle.h	/^\/\/ decode one run (c,l) and move the pointer p$/
+sais_main	is.c	/^static int sais_main(const unsigned char *T, int */
+save_hits	bwtsw2_core.c	/^static void save_hits(const bwtl_t *bwt, int thres/
+save_narrow_hits	bwtsw2_core.c	/^static void save_narrow_hits(const bwtl_t *bwtl, b/
+sbgint_t	bwt_gen.c	/^typedef int64_t sbgint_t;$/
+seq_reverse	bwaseqio.c	/^void seq_reverse(int len, ubyte_t *seq, int is_com/
+smem_aux_destroy	bwamem.c	/^static void smem_aux_destroy(smem_aux_t *a)$/
+smem_aux_init	bwamem.c	/^static smem_aux_t *smem_aux_init()$/
+smem_config	bwamem_extra.c	/^void smem_config(smem_i *itr, int min_intv, int ma/
+smem_i	bwamem.h	/^struct __smem_i;$/
+smem_itr_destroy	bwamem_extra.c	/^void smem_itr_destroy(smem_i *itr)$/
+smem_itr_init	bwamem_extra.c	/^smem_i *smem_itr_init(const bwt_t *bwt)$/
+smem_next	bwamem_extra.c	/^const bwtintv_v *smem_next(smem_i *itr)$/
+smem_set_query	bwamem_extra.c	/^void smem_set_query(smem_i *itr, int len, const ui/
+socket_connect	kopen.c	/^static int socket_connect(const char *host, const /
+socket_wait	kopen.c	/^static int socket_wait(int fd, int is_read)$/
+split_node	rope.c	/^static inline rpnode_t *split_node(rope_t *rope, r/
+stack_destroy	bwtsw2_core.c	/^static void stack_destroy(bsw2stack_t *s) { mp_des/
+stack_isempty	bwtsw2_core.c	/^#define stack_isempty(s) (kv_size(s->stack0) == 0 /
+stack_pop	bwtsw2_core.c	/^inline static bsw2entry_p stack_pop(bsw2stack_t *s/
+stack_push0	bwtsw2_core.c	/^inline static void stack_push0(bsw2stack_t *s, bsw/
+steal_work	kthread.c	/^static inline long steal_work(kt_for_t *t)$/
+swap	bwt_gen.c	/^#define swap(a, b, t);							t = a; a = b; b = t;$/
+swap_endian_data	bamlite.c	/^static void swap_endian_data(const bam1_core_t *c,/
+test_and_merge	bwamem.c	/^static int test_and_merge(const mem_opt_t *opt, in/
+thread_aux_t	bwtaln.c	/^} thread_aux_t;$/
+time_elapse	bwtsw2_core.c	/^static inline double time_elapse(const struct rusa/
+truncateLeft	bwt_gen.c	/^#define truncateLeft(value, offset)				( (value) </
+truncateRight	bwt_gen.c	/^#define truncateRight(value, offset)			( (value) >/
+ubyte_t	bntseq.h	/^typedef uint8_t ubyte_t;$/
+uint64_v	utils.h	/^typedef struct { size_t n, m; uint64_t *a; } uint6/
+update_a	fastmap.c	/^static void update_a(mem_opt_t *opt, const mem_opt/
+update_mate_aux	bwtsw2_aux.c	/^static void update_mate_aux(bwtsw2_t *b, const bwt/
+update_opt	bwtsw2_aux.c	/^static void update_opt(bsw2opt_t *dst, const bsw2o/
+usage	main.c	/^static int usage()$/
+while	rle.h	/^	} while (0)$/
+worker	bwtaln.c	/^static void *worker(void *data)$/
+worker_t	pemerge.c	/^} worker_t;$/
+wrap_calloc	malloc_wrap.c	/^void *wrap_calloc(size_t nmemb, size_t size,$/
+wrap_malloc	malloc_wrap.c	/^void *wrap_malloc(size_t size,$/
+wrap_realloc	malloc_wrap.c	/^void *wrap_realloc(void *ptr, size_t size,$/
+wrap_strdup	malloc_wrap.c	/^char *wrap_strdup(const char *s,$/
+write_aux	bwtsw2_aux.c	/^static void write_aux(const bsw2opt_t *opt, const /
+write_bytes	kopen.c	/^static int write_bytes(int fd, const char *buf, si/
+xassert	utils.h	/^#define xassert(cond, msg) if ((cond) == 0) _err_f/
+xopen	utils.h	/^#define xopen(fn, mode) err_xopen_core(__func__, f/
+xreopen	utils.h	/^#define xreopen(fn, mode, fp) err_xreopen_core(__f/
+xzopen	utils.h	/^#define xzopen(fn, mode) err_xzopen_core(__func__,/
