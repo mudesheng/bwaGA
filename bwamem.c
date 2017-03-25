@@ -346,7 +346,7 @@ int mem_chain_flt(const mem_opt_t *opt, int n_chn, mem_chain_t *a)
 		//int large_ovlp = 0;
 		for (k = 0; k < chains.n; ++k) {
 			int j = chains.a[k];
-			if ((chn_beg(a[j]) < chn_beg(a[i])) && (chn_end(a[i]) < chn_end(a[j])) {
+			if ((chn_beg(a[j]) < chn_beg(a[i])) && (chn_end(a[i]) < chn_end(a[j]))) {
 				int li = chn_end(a[i]) - chn_beg(a[i]);
 				int lj = chn_end(a[j]) - chn_beg(a[j]);
 				if (li >= lj * opt->mask_level && li < opt->max_chain_gap) {
@@ -366,7 +366,7 @@ int mem_chain_flt(const mem_opt_t *opt, int n_chn, mem_chain_t *a)
 				}
 			} */
 		}
-		int large_ovlp = 1
+		int large_ovlp = 1;
 		if (k == chains.n) {
 			kv_push(int, chains, i);
 			a[i].kept = large_ovlp? 2 : 3;
